@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Noto Sans Bold', sans-serif;
+	font-family: 'Montserrat SemiBold', sans-serif;
 	color: var(--secondary-color);
 	margin-bottom: 2rem;
 	font-weight: 700;
@@ -33,13 +33,13 @@ h6 {
 .h5,
 .h6 {
 	display: block;
-	font-family: 'Noto Sans Bold', sans-serif;
+	font-family: 'Montserrat SemiBold', sans-serif;
 	color: var(--secondary-color);
 	/* margin-bottom: 2rem !important; */
 }
 
 p {
-	font-family: 'DM Sans Regular', sans-serif;
+	font-family: 'Open Sans Light', sans-serif;
 	margin-bottom: 1rem;
 	line-height: 1.5;
 	color: var(--text-color);
@@ -50,7 +50,7 @@ a:visited {
 	color: var(--primary-color);
 	font-weight: 500;
 	text-decoration: none;
-	font-family: 'DM Sans Regular', sans-serif;
+	font-family: 'Open Sans Regular', sans-serif;
 }
 a:hover,
 a:focus {
@@ -71,11 +71,6 @@ a[target='_blank']:after {
 a[target='_blank']:after :hover {
 	text-decoration: none;
 }
-
-/* em {
-  font-family: 'Noto Sans', sans-serif;
-  font-style: italic;
-} */
 
 .caption-top {
 	caption-side: top;

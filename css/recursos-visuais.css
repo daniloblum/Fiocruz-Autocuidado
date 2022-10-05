@@ -141,7 +141,7 @@ a.bg-secondary:hover {
 	background-color: var(--secondary-color-dark) !important;
 }
 .bg-color-light {
-	background-color: var(--color-light) !important;
+	background-color: #eef2f6 !important;
 }
 
 .bg-primary::before,
@@ -171,7 +171,7 @@ pre {
 .heading__block .heading__before {
 	display: block;
 	font-size: 1.25rem;
-	font-family: 'Noto Sans Semibold', sans-serif;
+	font-family: 'Montserrat Semibold', sans-serif;
 	text-transform: uppercase;
 	line-height: 1;
 	color: var(--secondary-color);
@@ -464,7 +464,7 @@ Accordion Image
 	max-width: 100%;
 }
 .accordion-foto .accordion-foto-conteudo p {
-	font-size: 0.85rem;
+	font-size: 1rem;
 }
 
 /* -------------------------------- 
@@ -523,19 +523,19 @@ blockquote {
   border-left: 2px solid var(--secondary-color) !important;
   border-radius: 0 0 0 8px; */
 	margin: 0;
-	font-family: 'DM Sans Regular', sans-serif;
+	font-family: 'Open Sans Regular', sans-serif;
 	font-size: 1.25rem;
 	line-height: 1.5;
 	font-weight: 300;
 }
 blockquote span.material-symbols-rounded {
 	font-variation-settings: 'FILL' 1;
-	color: var(--primary-color);
+	color: var(--secondary-color);
 	font-size: 3rem;
 	padding: 0 30px 0 0;
 }
 blockquote > div {
-	border-left: 2px solid var(--primary-color);
+	border-left: 2px solid var(--secondary-color);
 	padding-left: 30px;
 }
 blockquote .quote-autor {
@@ -602,12 +602,11 @@ Destaques
 /*Olho de texto*/
 
 .olho-de-texto p {
-	color: var(--primary-color-dark);
+	color: var(--secondary-color-dark);
 	font-size: 1.5rem;
-	font-weight: 600;
 	/* padding:30px; */
 	text-align: center;
-	font-style: italic;
+	font-family: 'Open Sans SemiBoldItalic', sans-serif;
 }
 
 .olho-de-texto p:last-child {
@@ -627,13 +626,13 @@ Destaques
 }
 .box-title {
 	position: relative;
-	border: 1px solid var(--secondary-color-light);
+	border: 2px dashed var(--secondary-color-light);
 	border-radius: 0.75rem;
 	padding: 30px;
 }
 .box-title .h4 {
 	padding-bottom: 10px;
-	border-bottom: 1px solid var(--secondary-color-light);
+	border-bottom: 1px solid var(--secondary-color);
 	margin-bottom: 20px;
 	display: block;
 	font-weight: 500;
@@ -673,7 +672,7 @@ Destaques
 	font-size: 40px;
 	z-index: 1;
 	border-radius: 50%;
-	background: var(--primary-color);
+	background: var(--secondary-color-light);
 	box-shadow: 0px 4px 8px rgb(0 0 0 / 20%);
 	color: #ffffff;
 	border: 4px solid #ffffff;
@@ -803,7 +802,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
 	border-radius: 50%;
 }
 .green-audio-player .controls {
-	font-family: 'DM Sans Regular', sans-serif;
+	font-family: 'Open Sans Regular', sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	color: #55606e;
@@ -1211,8 +1210,7 @@ Listas
 	border: transparent;
 	border-radius: 6px;
 	padding: 0.4rem 0;
-	font-weight: 300;
-	font-family: 'DM Sans Regular', sans-serif;
+	font-family: 'Open Sans Light', sans-serif;
 	color: var(--text-color);
 }
 .obj-lista ul.list-group {
@@ -1222,7 +1220,7 @@ Listas
 .obj-lista ul.list-group .list-group-item:before {
 	font-family: 'Material Symbols Rounded';
 	content: 'label_important';
-	color: var(--primary-color);
+	color: var(--secondary-color);
 	vertical-align: middle;
 	margin-right: 10px;
 	font-size: 120%;
@@ -1292,7 +1290,7 @@ Listas
 }
 
 .obj-lista ol.list-group .list-group-item:before {
-	background-color: var(--primary-color);
+	background-color: var(--secondary-color);
 	content: counter(contador-ul);
 	margin-right: 0.8rem;
 	border-radius: 50%;
@@ -2644,7 +2642,7 @@ HORIZONTAL TIMELINE 1
 .cd-horizontal-timeline .events-content h2 {
 	font-weight: bold;
 	font-size: 2.6rem;
-	font-family: 'DM Sans Regular', sans-serif;
+	font-family: 'Open Sans Regular', sans-serif;
 	font-weight: 700;
 	line-height: 1.2;
 }
