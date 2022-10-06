@@ -204,7 +204,7 @@ Quadro de objetivo da aula
 -------------------------------- */
 .objetivo-aula {
 	background-color: rgb(251 251 251 / 50%);
-	border: 2px solid var(--primary-color-dark);
+	border: 2px solid var(--secondary-color-dark);
 	border-radius: 8px;
 	padding: 20px;
 }

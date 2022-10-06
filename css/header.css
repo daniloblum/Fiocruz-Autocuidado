@@ -1,12 +1,12 @@
 .header {
-	background-color: var(--primary-color);
-	height: 410px;
+	background: url('../images/header-aula.jpg');
+	height: 300px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 }
-.header::before {
+/* .header::before {
 	content: '';
 	background-image: url(../images/tarja-interna-esq.png);
 	background-repeat: no-repeat;
@@ -16,7 +16,6 @@
 	display: block;
 	top: 0;
 	left: 0;
-	/* background-color: var(--primary-color-light); */
 	width: 30%;
 	height: 100%;
 }
@@ -30,10 +29,9 @@
 	display: block;
 	top: 0;
 	right: 0;
-	/* background-color: var(--primary-color-light); */
 	width: 30%;
 	height: 100%;
-}
+} */
 .header__inner {
 	height: 100%;
 	display: flex;
@@ -51,7 +49,7 @@
 } */
 .header__title h2 {
 	display: block;
-	color: #ffffff;
+	color: var(--secondary-color);
 	padding: 0;
 	margin: 0;
 	font-weight: 700;
@@ -61,7 +59,7 @@
 	display: block;
 	font-family: 'Montserrat Semibold', sans-serif;
 	margin-bottom: 1rem;
-	color: #ffffff;
+	color: var(--secondary-color);
 	font-weight: 400;
 	font-size: 2rem;
 }
