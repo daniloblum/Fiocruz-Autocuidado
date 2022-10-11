@@ -181,9 +181,13 @@ pre {
 	content: url(../images/head-block-line-small.svg);
 	display: block;
 } */
-.heading__block .heading__title {
+.heading__block h4.heading__title {
 	color: var(--secondary-color);
 	font-size: 2.5rem;
+}
+.heading__block h5.heading__title {
+	color: var(--secondary-color);
+	font-size: 2rem;
 }
 .heading__block p,
 .heading__lead {
@@ -512,9 +516,6 @@ Citações
 
  -----------------------------*/
 
-.quote {
-	padding: 30px;
-}
 blockquote {
 	display: flex;
 	flex-direction: row;
@@ -537,6 +538,9 @@ blockquote span.material-symbols-rounded {
 blockquote > div {
 	border-left: 2px solid var(--secondary-color);
 	padding-left: 30px;
+}
+blockquote div p {
+	font-family: 'Open Sans Regular', sans-serif;
 }
 blockquote .quote-autor {
 	font-size: 1rem;

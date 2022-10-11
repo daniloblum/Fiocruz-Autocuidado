@@ -6,7 +6,7 @@
 /* On HTML */
 .tooltip-text {
 	color: var(--primary-color);
-	font-family: inherit;
+	font-family: 'Open Sans Regular', sans-serif;
 }
 
 .tooltip-text:hover {
