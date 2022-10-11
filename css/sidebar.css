@@ -28,8 +28,9 @@
 	min-height: 100vh;
 }
 .sidebar__inner hr {
-	background: var(--secondary-color);
+	background: var(--secondary-color-light);
 	margin: 0px 20px;
+	opacity: 0.5;
 }
 .sidebar__header {
 	padding: 30px 20px;
@@ -47,7 +48,7 @@
 	font-family: 'Montserrat Semibold', sans-serif !important;
 	margin: 10px 0;
 	line-height: 1.5;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 .sidebar__section {
 	padding: 20px 0;
@@ -125,6 +126,8 @@
 	opacity: 1;
 	font-variation-settings: 'FILL' 1;
 	font-weight: 600;
+	background: radial-gradient(#fff 50%, transparent 0%);
+	border-radius: 100%;
 }
 
 /* Vertical Line */
