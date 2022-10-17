@@ -5,7 +5,7 @@
 
 #page-content {
 	position: relative;
-	background-image: url(../images/page-content-bg1.png);
+	/* background-image: url(../images/page-content-bg1.png); */
 	background-repeat: no-repeat;
 	padding-top: 50px;
 }
@@ -245,7 +245,7 @@ Abas
 
 .abas .nav-tabs .nav-link:hover,
 .nav-tabs .nav-link:focus {
-	border-color: #e9ecef #e9ecef #dee2e6;
+	border-color: var(--primary-color);
 	background-color: var(--color-light-hover);
 	color: var(--primary-color);
 }
@@ -264,6 +264,7 @@ Abas
 
 .abas .tab-content {
 	border-bottom: 1px solid #e9ecef;
+	padding: 15px 0 30px;
 }
 
 .boot-tabs {
@@ -272,7 +273,8 @@ Abas
 
 @media (min-width: 992px) {
 	.abas .nav-link {
-		padding: 0.5rem;
+		font-size:1.15rem;
+		padding: 1rem;
 	}
 }
 
@@ -1082,7 +1084,7 @@ Flipcards 2.0
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: linear-gradient(180deg, rgba(134, 101, 126, 0.35) 0%, rgba(0, 0, 0, 0.18) 50%, rgba(178, 121, 119, 1) 100%);
+	/* background: linear-gradient(180deg, rgba(227, 247, 255, 1) 0%, rgba(227, 247, 255, 0.18) 50%, rgb(255, 255, 255) 100%); */
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -1106,10 +1108,13 @@ Flipcards 2.0
 .flip-card-front .card-footer .btn,
 .flip-card-back .card-footer .btn {
 	width: 70%;
+	/* border: 2px solid var(--primary-color); */
+	border:transparent;
+	background: var(--primary-color);
 }
 
 .flip-card-front .card-footer .btn:hover {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: var(--primary-color-light);
 }
 
 .flip-card-front .card-footer label {
@@ -1130,6 +1135,8 @@ Flipcards 2.0
 .flip-card .fundo1 {
 	background-image: url(../images/fundo-flipcard.jpg);
 	background-size: cover;
+	background-color: var(--secondary-color-extra-light);
+	border-color: var(--secondary-color-extra-light);
 }
 
 /*Configuração do verso*/
@@ -1158,6 +1165,16 @@ Flipcards 2.0
 	color: #fff;
 	background: var(--primary-color);
 }
+
+.flip-card-back .card-footer .btn:hover,
+.flip-card-back .card-footer .btn:focus  {
+	background-color: var(--primary-color-light);
+	color:#FFF;
+} 
+
+.flip-card-back .card-footer .btn:focus {
+	background-color: var(--primary-color-light);
+} 
 
 /*Habilita o Scroll*/
 .flip-card .flip-card-front .card-text {
