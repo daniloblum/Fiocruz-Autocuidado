@@ -35,7 +35,7 @@ h6 {
 	display: block;
 	font-family: 'Montserrat SemiBold', sans-serif;
 	color: var(--secondary-color);
-	/* margin-bottom: 2rem !important; */
+	margin-bottom: 2rem;
 }
 
 p {
@@ -133,7 +133,7 @@ section {
 }
 
 section .page-nav {
-	border-top: 1px solid var(--secondary-color-light);
+	border-top: 1px solid var(--secondary-color);
 	padding: 40px 0;
 	flex-direction: row;
 }
