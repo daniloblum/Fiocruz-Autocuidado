@@ -73,6 +73,11 @@ a[target='_blank']:after :hover {
 	text-decoration: none;
 }
 
+#accordion-bibliografia a {
+	word-break: break-all;
+
+}
+
 .caption-top {
 	caption-side: top;
 }
