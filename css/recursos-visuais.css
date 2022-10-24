@@ -171,7 +171,7 @@ pre {
 .heading__block .heading__before {
 	display: block;
 	font-size: 1.25rem;
-	font-family: 'Montserrat Semibold', sans-serif;
+	font-family: 'Open Sans Light', sans-serif;
 	text-transform: uppercase;
 	line-height: 1;
 	color: var(--secondary-color);
@@ -183,7 +183,7 @@ pre {
 } */
 .heading__block h4.heading__title {
 	color: var(--secondary-color);
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 }
 .heading__block h5.heading__title {
 	color: var(--secondary-color);
