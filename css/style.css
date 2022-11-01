@@ -7,6 +7,7 @@
 @import 'recursos-visuais.css';
 @import 'tooltip.css';
 @import 'exercise.css';
+@import 'infographic.css';
 
 * {
 	margin: 0;
@@ -75,7 +76,6 @@ a[target='_blank']:after :hover {
 
 #accordion-bibliografia a {
 	word-break: break-all;
-
 }
 
 .caption-top {
@@ -92,7 +92,8 @@ a[target='_blank']:after :hover {
 	color: #ffffff !important;
 }
 strong {
-	font-weight: 700;
+	font-family: 'Open Sans Semibold', sans-serif;
+	font-weight: 600;
 }
 
 .figure-caption {

@@ -425,7 +425,6 @@ Accordion Image
 	transition: all 0.3s ease-out;
 }
 .accordion-foto a:not(.accordion-foto-conteudo a) {
-	padding: 50px;
 	text-decoration: none !important;
 }
 .accordion-foto a:hover:not(.accordion-foto-conteudo a),
@@ -1348,7 +1347,9 @@ Popover
 
 -------------------------------- */
 
-.popover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
+.popover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
 /* -------------------------------- 
 

@@ -80,11 +80,23 @@
 	font-family: 'Open Sans SemiBold';
 	font-style: normal;
 	font-weight: 600;
-	src: url('/fonts/OpenSans-SemiBold.ttf');
+	src: url('../fonts/OpenSans-SemiBold.ttf');
 }
 @font-face {
 	font-family: 'Open Sans SemiBoldItalic';
 	font-style: italic;
 	font-weight: 600;
 	src: url('../fonts/OpenSans-SemiBoldItalic.ttf');
+}
+@font-face {
+	font-family: 'Open Sans Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+	font-family: 'Open Sans BoldItalic';
+	font-style: italic;
+	font-weight: 700;
+	src: url('../fonts/OpenSans-BoldItalic.ttf');
 }
