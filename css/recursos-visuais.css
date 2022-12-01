@@ -348,8 +348,8 @@ Accordion
 }
 
 .accordion.transcription .accordion__header a {
-	font-size:0.9rem;
-	padding-right:40px;
+	font-size: 0.9rem;
+	padding-right: 40px;
 }
 
 /* --------------------------------
@@ -1073,7 +1073,7 @@ Flipcards 2.0
 	height: 100%;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	padding: 2rem;
+	padding: 2rem 1rem;
 }
 
 /*Configuração da frente*/
@@ -1346,7 +1346,7 @@ Modal
 -----------------------------------------------------------------*/
 
 .modal .modal-title {
-	margin-top: 0;
+	margin: 0;
 }
 
 .modal .modal-body {
