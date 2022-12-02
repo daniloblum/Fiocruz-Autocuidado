@@ -5,6 +5,8 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 		let answerOption = mcq.querySelectorAll('.mcq__answers li');
 		let submitButton = mcq.querySelector('.mcq__submit button');
 		let submitFeedback = mcq.querySelector('.mcq__submit--feedback');
+        let submitAnswerFeedbackCorrect = mcq.querySelector('.mcq__answer--feedback.feedback-correct');
+		let submitAnswerFeedbackIncorrect = mcq.querySelector('.mcq__answer--feedback.feedback-incorrect');
 		let score = 0;
 
 		// Select option, clear the others and enable submit
@@ -41,6 +43,10 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 			submitFeedback.innerHTML = `<span class="material-symbols-rounded">cancel</span><span class="feedback__content">Resposta errada! <br class="d-lg-none" />Tente novamente.</span>`;
 			submitFeedback.classList.remove('d-none', 'mcq__submit__feedback--correct');
 			submitFeedback.classList.add('mcq__submit__feedback--incorrect');
+
+			if (submitAnswerFeedbackIncorrect) {
+                submitAnswerFeedbackIncorrect.classList.remove('d-none'); 
+            }
 		}
 
 		function correctAnswer(event) {
@@ -50,6 +56,10 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 			submitFeedback.innerHTML = `<span class="material-symbols-rounded">check_circle</span><span class="feedback__content">Resposta correta! <br class="d-lg-none" />Você acertou em ${score} tentativa(s).</span>`;
 			submitFeedback.classList.remove('d-none', 'mcq__submit__feedback--incorrect');
 			submitFeedback.classList.add('mcq__submit__feedback--correct');
+
+            if (submitAnswerFeedbackCorrect) {
+                submitAnswerFeedbackCorrect.classList.remove('d-none'); 
+            }
 		}
 
 		function blockAnswerOption() {
@@ -100,6 +110,14 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 				}
 				submitFeedback.classList.remove('mcq__submit__feedback--correct', 'mcq__submit__feedback--incorrect');
 				submitFeedback.classList.add('d-none');
+
+				if (submitAnswerFeedbackCorrect) {
+                	submitAnswerFeedbackCorrect.classList.add('d-none');
+				}
+
+				if (submitAnswerFeedbackIncorrect) {
+                	submitAnswerFeedbackIncorrect.classList.add('d-none');
+				}
 			}
 		}
 	});

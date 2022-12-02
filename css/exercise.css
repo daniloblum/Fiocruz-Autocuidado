@@ -4,7 +4,7 @@
 .mcq-card .mcq__question {
 	padding: 30px 0;
 	border-bottom: 1px solid var(--secondary-color-light);
-	font-family: 'Open Sans SemiBold', sans-serif;
+	font-family: 'DM Sans SemiBold', sans-serif;
 	font-size: 1.25rem;
 }
 
@@ -19,7 +19,8 @@
 .mcq-card .mcq__answers ul li {
 	padding: 10px 20px;
 	margin-bottom: 20px;
-	border: 2px solid var(--primary-color-light);
+	border: 2px solid var(--color-light);
+	background-color: var(--color-light);
 	border-radius: 8px;
 	cursor: pointer;
 	font-size: 1rem;
@@ -29,12 +30,12 @@
 	margin-bottom: 0;
 }
 .mcq-card .mcq__answers ul li:not(.mcq__answers--blocked, .mcq__answers--selected, .mcq__answers--correct, .mcq__answers--incorrect):hover {
-	border-color: var(--primary-color-dark);
+	border-color: var(--secondary-color);
 	/* background-color: var(--color-light-hover); */
 }
 .mcq-card .mcq__answers ul li.mcq__answers--selected {
 	background-color: var(--secondary-color-extra-light);
-	border-color: var(--secondary-color-light);
+	border-color: var(--secondary-color);
 	color: var(--secondary-color-dark);
 }
 .mcq-card .mcq__answers ul li.mcq__answers--correct {
@@ -64,6 +65,9 @@
 	padding: 30px 0;
 	border-top: 1px solid var(--secondary-color-light);
 }
+.mcq-card .mcq__submit button {
+	overflow-wrap: normal;
+}
 .mcq-card .mcq__submit button[aria-disabled='true'] {
 	background-color: #909599;
 	border-color: #909599;
@@ -72,7 +76,7 @@
 
 /* Feedback mensage */
 .mcq-card .mcq__submit .mcq__submit--feedback {
-	font-family: 'Open Sans SemiBold', sans-serif;
+	font-family: 'DM Sans Bold', sans-serif;
 	margin-left: 0;
 	margin-bottom: 20px;
 	line-height: 1.2;
@@ -94,7 +98,21 @@
 	color: #dc3545;
 }
 
+/* Answer Feedback (correct answers) */
+
+.mcq-card .mcq__answer--feedback {
+	padding-bottom:30px;
+}
+
+.mcq-card .mcq__answer--feedback p {
+	color: var(--text-color-light);
+	font-size: 1.1rem;
+}
+
 @media (min-width: 768px) {
+	.mcq-card .mcq__submit .mcq__submit--feedback {
+		margin-bottom: 0;
+	}
 	.mcq-card .mcq__submit {
 		flex-direction: row;
 	}
