@@ -10,55 +10,54 @@ body {
 
 header {
 	position: relative;
-	background-image: url(../images/home/tarja-capa.jpg);
-	background-size: cover;
-	background-position: top center;
-	height: 140vw;
+	z-index: 1;
+	background-image: linear-gradient(0deg, #40deff, #ffffff);
 }
-.main {
-	background: #fbfbfb url(../images/home/section-bg.png);
-	background-repeat: no-repeat;
-	background-position-y: 20%;
-	background-position-x: center;
-	background-size: 200%;
-	transform: translateY(-80px);
+header,
+.layer-parallax {
+	height: 600px;
 }
-/* .main::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateZ(-1px) scale(2);
-    background-size: 100%;
-    z-index: -1;
-    background-image: url('http://www.shainblumphoto.com/wp-content/uploads/2016/02/dubai_1.jpg');
-  } */
-
-.header__title {
+#header-title {
+	background: transparent;
+}
+#header-title h1 {
+	font-family: 'Montserrat Bold', sans-serif;
+	font-size: 56px;
+	letter-spacing: -2px;
+	text-transform: uppercase;
 	text-align: center;
-}
-
-.header__title .logo {
-	display: inline-block;
-	padding: 15px 20px;
-	background-color: var(--primary-color-light);
-	border-radius: 0 0 0.5rem 0.5rem;
-	margin: 0 auto 10vw;
-}
-
-.header__title .logo img {
-	height: 60px;
-}
-
-.header__title h1 {
-	font-size: 12vw;
-	font-family: 'Montserrat SemiBold', sans-serif;
 	margin: 0 auto;
+	line-height: 0.9;
+}
+#header-title h1 span {
+	font-family: 'Montserrat Regular', sans-serif;
+	font-size: 40px;
 }
 
-@media (min-width: 768px) {
+.layer-parallax {
+	background-position: center;
+	background-size: auto 600px;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+}
+.layer-parallax.parallax {
+	position: fixed;
+}
+#layer-1 {
+	background-image: url(/images/home/layer-1.png);
+}
+#layer-2 {
+	background-image: url(/images/home/layer-2.png);
+}
+#layer-3 {
+	background-image: url(/images/home/layer-3.png);
+}
+#layer-4 {
+	background-image: url(/images/home/layer-4.png);
+}
+
+/* @media (min-width: 768px) {
 	header {
 		height: 70vw;
 	}
@@ -80,29 +79,36 @@ header {
 	.header__title h1 {
 		font-size: 3.25vw;
 	}
+} */
+
+.main {
+	background: #ffffff;
+
+	z-index: 10;
 }
 
+#course-program .icone {
+	height: 120px;
+}
+#course-program .container-fluid {
+	background-color: #eff8fb;
+}
 #course-program hr {
 	border-color: var(--secondary-color);
 }
 
 #course-program .card {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 30px 0;
-	align-items: normal;
-	border: 1px solid var(--secondary-color);
-	box-shadow: 0 16px 60px rgba(0, 0, 0, 0.1);
+	height: 100%;
+	/* border: 1px solid var(--secondary-color); */
+	box-shadow: 0 8px 16px rgba(200, 200, 200, 1);
 	padding: 20px;
-	margin-bottom: 30px;
 }
+
 #course-program .card .card-header {
-	flex: 1 1 auto;
-	border: none;
 	background: none;
-	padding: 0;
+	padding: 10px 0 20px;
 	margin: 0;
+	border-bottom: 1px solid var(--color-light);
 }
 
 #course-program .card .card-header :first-child {
@@ -115,11 +121,8 @@ header {
 	font-size: 1.25rem;
 }
 #course-program .card .card-body {
-	border-top: 1px solid var(--secondary-color-light);
-	border-bottom: 1px solid var(--secondary-color-light);
 	padding: 20px 0;
 	font-size: 1.2rem;
-	flex: 1 1 auto;
 }
 #course-program .card .card-body span {
 	color: var(--secondary-color-dark);
@@ -129,17 +132,18 @@ header {
 	margin-bottom: 0;
 }
 #course-program .card .card-footer {
-	padding: 0;
+	padding: 20px 0 0;
 	margin: 0;
 	border: none;
+	border-top: 1px solid var(--color-light);
 	background: none;
-	flex: 1 1 auto;
 	text-align: center;
 }
+/*
 
 @media (min-width: 768px) {
 	#course-program .card {
-		flex-direction: row;
+		flex-direction: column;
 		gap: 0 20px;
 		align-items: center;
 	}
@@ -179,37 +183,10 @@ header {
 		flex: 1 1 20%;
 		text-align: center;
 	}
-}
-.card-destaque {
-	border: 1px solid var(--secondary-color);
-}
-.card-destaque p {
-	font-size: inherit;
-}
+} */
 
-.presentation .bg-secondary-light {
-	background-color: rgb(227, 211, 211, 0.3) !important;
-}
-
-.presentation .table-responsive th {
-	vertical-align: middle;
-	border-bottom: 1px solid #d2a6a6;
-}
-
-.presentation.bg-section {
-	background: #f8fafc url(../images/home/section-bg.png);
-}
-
-@media (min-width: 768px) {
-	.main {
-		background-position-y: 0;
-		background-size: 200%;
-		transform: none;
-	}
-}
-@media (min-width: 992px) {
-	.main {
-		background-position-y: 0;
-		background-size: 100%;
-	}
+footer {
+	position: relative;
+	background-color: #ffffff;
+	z-index: 10;
 }
