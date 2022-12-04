@@ -47,16 +47,16 @@ header,
 	position: fixed;
 }
 #layer-1 {
-	background-image: url(/images/home/layer-1.png);
+	background-image: url(../images/home/layer-1.png);
 }
 #layer-2 {
-	background-image: url(/images/home/layer-2.png);
+	background-image: url(../images/home/layer-2.png);
 }
 #layer-3 {
-	background-image: url(/images/home/layer-3.png);
+	background-image: url(../images/home/layer-3.png);
 }
 #layer-4 {
-	background-image: url(/images/home/layer-4.png);
+	background-image: url(../images/home/layer-4.png);
 	background-repeat: no-repeat;
 }
 
