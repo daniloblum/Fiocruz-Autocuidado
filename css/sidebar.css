@@ -45,7 +45,7 @@
 .sidebar__header h1 span {
 	display: block;
 	color: var(--secondary-color-extra-light) !important;
-	font-family: 'Montserrat Semibold', sans-serif !important;
+	font-family: 'Montserrat SemiBold', sans-serif !important;
 	margin: 10px 0;
 	line-height: 1.5;
 	font-size: 1.25rem;
@@ -61,13 +61,13 @@
 }
 .sidebar__section h3 span {
 	display: block;
-	font-family: 'Montserrat Semibold', sans-serif;
+	font-family: 'Montserrat SemiBold', sans-serif;
 	color: var(--secondary-color-extra-light) !important;
 	margin-bottom: 10px;
 } */
 .sidebar__section .pre-title {
 	display: block;
-	font-family: 'Montserrat Semibold', sans-serif;
+	font-family: 'Montserrat SemiBold', sans-serif;
 	color: var(--secondary-color-extra-light) !important;
 	margin-bottom: 10px;
 	padding: 0 20px;

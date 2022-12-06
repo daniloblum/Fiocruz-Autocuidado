@@ -30,8 +30,8 @@ header,
 	margin: 0 auto;
 }
 #header-title h1 span {
-	font-family: 'Montserrat Bold', sans-serif;
-	font-size: 12vw;
+	font-family: 'Montserrat ExtraBold', sans-serif;
+	font-size: 11vw;
 	line-height: 1;
 	margin-bottom: 10px;
 }
@@ -62,7 +62,7 @@ header,
 
 @media (min-width: 768px) {
 	#header-title h1 span {
-		font-size: 9vw;
+		font-size: 8vw;
 	}
 	#header-title h1 {
 		font-size: 40px;
@@ -71,7 +71,7 @@ header,
 
 @media (min-width: 992px) {
 	#header-title h1 span {
-		font-size: 56px;
+		font-size: 54px;
 	}
 	#header-title h1 {
 		font-size: 40px;
