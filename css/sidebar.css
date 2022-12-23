@@ -104,6 +104,10 @@
 	color: #ffffff;
 	font-size: 0.875rem;
 }
+.sidebar__topic-list .sidebar__list-item em,
+.sidebar__topic-list .sidebar__list-item strong {
+	display: contents;
+}
 .sidebar__topic-list .sidebar__list-item.sidebar__list-item--selected {
 	color: #ffffff;
 }
