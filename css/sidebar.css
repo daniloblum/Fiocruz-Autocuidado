@@ -348,6 +348,7 @@
 
 	.sidebar--close {
 		left: -100%;
+
 		/* transition: 0.3s;
         transition-timing-function: ease-out; */
 	}
@@ -362,10 +363,12 @@
 	}
 	.sidebar-toggle--close {
 		right: 0;
+		background-color: var(--primary-color) !important;
 	}
 	.sidebar-toggle--open {
 		/* left:calc(100vw - 25%); */
 		right: 0;
+		background-color: var(--primary-color-dark) !important;
 	}
 	.touch-enable {
 		touch-action: inherit;
